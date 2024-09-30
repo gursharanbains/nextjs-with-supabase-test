@@ -4,9 +4,12 @@
     "dev": "next dev",
     "build": "prettier --check . && next build",
     "build:local": "prettier --write . && next build",
+    "test": "echo \"No tests yet\"",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.1",
@@ -33,6 +36,8 @@
     "eslint-config-next": "14.2.13",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tailwindcss": "^3.17.4",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "postcss": "8.4.33",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
