@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "tailwindcss/classnames-order": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": [
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:tailwindcss/recommended",
+        "prettier"
+      ],
+      "rules": {
+        "tailwindcss/classnames-order": "off"
+      }
+    }
+  ]
+}
